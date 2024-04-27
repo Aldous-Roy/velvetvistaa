@@ -1,0 +1,21 @@
+.heading {
+    position: relative;
+    width: min-content;
+}
+
+.heading::after {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    width: 0;
+    height: 4px;
+    border-radius: 1rem;
+    background-color: aqua;
+    transition: all 0.3s ease-in-out;
+}
+
+.heading:hover::after {
+    width: 100%;
+}
